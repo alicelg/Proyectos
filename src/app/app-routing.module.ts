@@ -8,6 +8,7 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'proyectos', component: ProyectosComponent },
   { path: 'tecnologias', component: TecnologiasComponent },
