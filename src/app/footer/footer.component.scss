@@ -9,3 +9,24 @@
     font-size: 15px;
     color: white;
 }
+
+p,
+a {
+    color: rgb(240, 238, 238);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+p:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
