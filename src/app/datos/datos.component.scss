@@ -1,0 +1,113 @@
+/* Estilos de blog */
+/* FontAwesome for working BootSnippet :> */
+
+#blog {
+    .btn-primary {
+        background-color: rgb(235, 233, 233);
+        border: none;
+    }
+
+    .btn-primary i {
+        color: red;
+    }
+
+    .section-title {
+        text-align: center;
+        color: black;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .card {
+        border: none;
+        background: rgb(238, 237, 237);
+    }
+
+    .image-flip:hover .backside,
+    .image-flip.hover .backside {
+        transform: rotateY(0deg);
+        border-radius: 0.25rem;
+    }
+
+    .image-flip:hover .frontside,
+    .image-flip.hover .frontside {
+        transform: rotateY(180deg);
+    }
+
+    .mainflip {
+        transition: 1s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .frontside {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30px;
+    }
+
+    .backside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        transform: rotateY(-180deg);
+        box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    }
+
+    .frontside,
+    .backside {
+        backface-visibility: hidden;
+        transition: 1s;
+        transform-style: preserve-3d;
+    }
+
+    .frontside .card,
+    .backside .card {
+        min-height: 312px;
+    }
+
+    .frontside .card .card-body img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
+
+.imagen-globo {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.btn {
+    background-color: gray;
+    color: white;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.size {
+    width: 30px;
+    margin: 0 auto;
+}
+
+.color-opinion {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+hr {
+    width: 500px;
+    border-top: 0.5px solid black;
+    opacity: 0.5;
+}
+
+.card {
+    background-color: rgb(246, 246, 246);
+}
