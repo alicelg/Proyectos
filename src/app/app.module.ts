@@ -11,6 +11,9 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { DatosComponent } from './datos/datos.component';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,9 +27,14 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas);
+  }
+}
