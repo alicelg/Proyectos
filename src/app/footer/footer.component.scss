@@ -15,6 +15,7 @@ a {
     color: rgb(240, 238, 238);
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 0;
 }
 
 p:hover {
@@ -29,4 +30,9 @@ a:hover {
 
 img {
     width: 100%;
+}
+
+.icono {
+    font-size: 30px;
+    color: yellow;
 }

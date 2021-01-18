@@ -35,4 +35,20 @@ h5 span {
 p,
 a {
     color: rgb(240, 240, 240);
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: yellow;
+}
+
+p:hover {
+    color: yellow;
+}
+
+.icono {
+    font-size: 30px;
+    color: yellow;
 }

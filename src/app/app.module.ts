@@ -14,7 +14,9 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas);
+    library.addIconPacks(fas, fab);
   }
 }
